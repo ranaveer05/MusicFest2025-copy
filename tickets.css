@@ -1,0 +1,65 @@
+body {
+  font-family: Arial, sans-serif;
+  
+}
+
+.price-box {
+  background: var(--card-bg);
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #cbdafe;
+  box-shadow: 0 2px 6px rgba(4, 4, 4, 0.1);
+}
+
+.main-nav a {
+  margin-left: 20px;
+  color: #82b0fb;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(6px);
+}
+.price-box h3 {
+  margin-bottom: 10px;
+}
+
+.price-box ul {
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+#totalPrice {
+  color: #0056d6;
+  font-weight: bold;
+}
+
+
+.ticketContainer{
+  display: flex;
+  gap: 30px; 
+  flex-wrap: wrap;
+}
+
+.column_form{
+flex: 1 1 400px; 
+}
+
+.column_price{
+    flex: 0 0 250px; 
+}
+
+@media screen and (max-width: 800px) {
+  .ticketContainer {
+    flex-direction: column; 
+  }
+  .column_price {
+    flex: 1 1 100%;
+  }
+}

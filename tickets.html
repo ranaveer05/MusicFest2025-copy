@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tickets Booking Page</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="tickets.css" />
+</head>
+<body>
+  
+    
+    
+<header class="site-header">
+    
+      <div>
+        <h1 class="site-title">MusicFest 2025</h1>
+        <p class="subtitle">Same Beats • New Talents</p>
+      </div>
+
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="lineup.html">Lineup</a>
+      <a href="schedule.html">Schedule</a>
+      <a href="tickets.html">Tickets</a>
+      <button id="theme-toggle">Toggle Dark / Light Mode</button>
+    </nav>
+</header>
+
+
+
+    <div class="column_price">
+    <div class="price-box">
+  <h3>Ticket Prices</h3>
+  <ul>
+    <li>General Admission: $50</li>
+    <li>VIP: $100</li>
+    <li>Premium: $150</li>
+  </ul>
+  
+</div>
+    </div>
+
+  
+
+<h2>Book Your Tickets</h2>
+  <div class="ticketContainer">
+    <div class="column_form">
+        <form id="ticketForm">
+      <label for="fullName">Full Name</label>
+      <input type="text" id="fullName" name="fullName" required />
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" required />
+
+      <label for="tickets">Number of Tickets</label>
+      <input type="number" id="tickets" name="tickets" min="1" max="10" required />
+
+      <label for="ticketType">Ticket Type</label>
+      <select id="ticketType" name="ticketType" required>
+        <option value="General Admission">General Admission</option>
+        <option value="VIP">VIP</option>
+        <option value="Premium">Premium</option>
+      </select>
+
+      <label for="payment">Payment Method</label>
+      <select id="payment" name="payment" required>
+        <option value="Credit Card">Credit Card</option>
+        <option value="Debit Card">Debit Card</option>
+        <option value="PayPal">PayPal</option>
+      </select>
+
+      <label for="requirements">Special Requirements</label>
+      <textarea id="requirements" name="requirements" rows="3"></textarea>
+
+      <label>
+        <input type="checkbox" required /> I agree to the Terms and Conditions
+      </label>
+
+      <div class="buttons">
+        <button type="submit" class="submit-btn">Submit</button>
+        <button type="reset" class="reset-btn">Reset</button>
+      </div>
+      </form>
+      </div>
+  </div>
+    
+  
+  <script src="tickets.js"></script>
+  <script src="main.js"></script>
+</body>
+<footer>
+  <p>© 2025 Made By Veer Rana</p>
+</footer>
+</html>
+
+

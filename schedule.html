@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Schedule Page</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="schedule.css" />
+</head>
+<body>
+<header class="site-header">
+    <div class="brand">
+      <img src="" class="logo" />
+      <div>
+        <h1 class="site-title">MusicFest 2025</h1>
+        <p class="subtitle">Same Beats • New Talents</p>
+      </div>
+    </div>
+
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="lineup.html">Lineup</a>
+      <a href="schedule.html">Schedule</a>
+      <a href="tickets.html">Tickets</a>
+      <button id="theme-toggle">Toggle Dark / Light Mode</button>
+    </nav>
+  </header>
+  <h1 class="title">Performance Schedule</h1>
+
+  <!-- Day Filter Buttons -->
+  <div class="day-buttons">
+    <button onclick="showDay('day1')">Day 1</button>
+    <button onclick="showDay('day2')">Day 2</button>
+  </div>
+
+  <!-- Day 1 Schedule Table -->
+  <section id="day1" class="schedule-day">
+    <h2>Day 1</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Time Slot</th>
+          <th>Artist Name</th>
+          <th>Stage Name</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>12:00 PM - 1:00 PM</td>
+          <td>Arjit Singh</td>
+          <td>Main Stage</td>
+        </tr>
+        <tr>
+          <td>1:00 PM - 3:00 PM</td>
+          <td>Diljit Dosanjh</td>
+          <td>Main Stage</td>
+        </tr>
+        <tr>
+          <td>3:00 PM - 4:00 PM</td>
+          <td>Yo Yo Honey Singh </td>
+          <td>Main Stage</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Day 2 Schedule Table -->
+  <section id="day2" class="schedule-day" style="display:none;">
+    <h2>Day 2</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Time Slot</th>
+          <th>Artist Name</th>
+          <th>Stage Name</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>12:00 PM - 1:00 PM</td>
+          <td>Talwinder</td>
+          <td>Main Stage</td>
+        </tr>
+        <tr>
+          <td>1:00 PM - 3:00 PM</td>
+          <td>Sabrina Carpenter </td>
+          <td>Main Stage</td>
+        </tr>
+        <tr>
+          <td>3:00 PM - 4:00 PM</td>
+          <td>Bruno Mars</td>
+          <td>Main Stage</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <script>
+    function showDay(day) {
+      document.getElementById('day1').style.display = 'none';
+      document.getElementById('day2').style.display = 'none';
+      document.getElementById(day).style.display = 'block';
+    }
+  </script>
+<script src="main.js"></script>
+</body>
+<footer>
+  <p>© 2025 Made By Veer Rana</p>
+</footer>
+</html>
+
+
